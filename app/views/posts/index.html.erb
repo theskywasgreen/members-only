@@ -1,0 +1,22 @@
+<div class="posts">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Find all the <b>embarassing</b> stories by other ClubHouse members here.</h1>
+      <%= link_to "Create your own post »", new_post_path, class: "btn btn-primary" %>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <% @posts.each do |post| %>
+        <br>
+          <div class="background">
+            <div class="border">
+            <h2><%= post.title %></h2>
+            <p>by: <%= signed_in? ? post.user.name : "Sign in to see the author" %> at <%= post.created_at %></p>
+            </div>
+            <p><%= post.body %></p>
+          </div>
+            <% end %>
+      </div>
+    </div>
+  </div>
+</div>

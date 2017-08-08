@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Sign In</h1>
+    <br>
+    <div class="container-main">
+      <div class="form-group">
+        <%= form_for(:session, url: signin_path) do |f| %>
+
+          <%= f.label :email %>
+          <%= f.email_field :email, class: "form-control" %>
+          <br>
+          <br>
+
+          <%= f.label :password %>
+          <%= f.password_field :password, class: "form-control" %>
+          <br>
+          <br>
+
+          <%= f.label :password_confirmation %>
+          <%= f.password_field :password_confirmation, class: "form-control" %>
+          <br>
+          <br>
+
+          <%= f.submit "Sign In »", class: "btn btn-primary" %>
+          <br>
+          <%= link_to "or register here", '#' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
