@@ -1,31 +1,31 @@
 <div class="container">
   <div class="jumbotron">
-    <h1>Sign In</h1>
-    <br>
+    <h1>Sign up</h1>
     <div class="container-main">
       <div class="form-group">
-        <%= form_for(:session, url: signin_path) do |f| %>
+        <%= form_for(@user, url: signup_path) do |f| %>
+          <%= render 'shared/user_error_messages' %>
+
+          <%= f.label :name %>
+          <%= f.text_field :name, class: "form-control" %>
+          <br>
 
           <%= f.label :email %>
           <%= f.email_field :email, class: "form-control" %>
           <br>
-          <br>
 
           <%= f.label :password %>
           <%= f.password_field :password, class: "form-control" %>
-          <br>
           <br>
 
           <%= f.label :password_confirmation %>
           <%= f.password_field :password_confirmation, class: "form-control" %>
           <br>
           <br>
+          <%= f.submit "Create account »", class: "btn btn-primary" %>
 
-          <%= f.submit "Sign In »", class: "btn btn-primary" %>
-          <br>
-          <%= link_to "or register here", signup_path %>
-        <% end %>
+          <% end %>
+        </div>
       </div>
     </div>
-  </div>
 </div>
