@@ -2,6 +2,7 @@ module SessionsHelper
 
   def sign_in(user)
     session[:user_id] = user.id
+    cookies.permanent.signed[:user_id] = user.id
     cookies.permanent[:remember_token] = user.remember_digest
     @current_user = current_user
   end
