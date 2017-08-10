@@ -14,8 +14,8 @@ test:
   username: Nicky
   password: nicky8086
 
- production:
-    adapter: postgresql
-    database: my_databse_production
-    username: Nicky
-    password: nicky8086
+production:
+  adapter: postgresql
+  database: my_databse_production
+  username: Nicky
+  password: nicky8086
