@@ -12,18 +12,16 @@ class User < ApplicationRecord
   has_secure_password
   has_many :posts
 
-  def User.new_token
+  def self.new_token
     SecureRandom.urlsafe_base64
   end
 
-  def User.digest(string)
-    string.to_s
-    Digest::SHA1.hexdigest(string)
+  def self.digest(string)
+    Digest::SHA1.hexdigest(string.to_s)
   end
 
   def create_remember_token
-    self.remember_digest = User.new_token
-    self.remember_token = User.digest(remember_digest)
+    self.remember_token = User.digest(User.new_token)
   end
 
   private
