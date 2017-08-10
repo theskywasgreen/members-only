@@ -1,6 +1,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background: #3E4649;
+  color: #f7f7f7;
+  font-family: 'Montserrat', sans-serif;
+  h1,
+  h2 {
+  	font-weight: bold;
+  }
+  p {
+  	font-size: 16px;
+  	color: #cdcdcd;
+  }
+}
+
 .navbar {
   margin-bottom: 0;
   padding: 0 3% 0 3%;
@@ -18,31 +32,15 @@
 	background: #27A967;
 }
 
-body {
-  background: #3E4649;
-  color: #f7f7f7;
-  font-family: 'Montserrat', sans-serif;
-}
-
-h1,
-h2 {
-	font-weight: bold;
-}
-
-p {
-	font-size: 16px;
-	color: #cdcdcd;
-}
-
 .jumbotron {
 	background: #27A967;
-	color: white;
+	color: #fff;
 	text-align: center;
   width: 100%;
-}
-.jumbotron p {
-	color: white;
-	font-size: 26px;
+  p {
+    color: #fff;
+    font-size: 26px;
+  }
 }
 
 .container {
@@ -57,26 +55,26 @@ p {
 .btn-primary {
 	color: #fff;
 	background-color: transparent;
-	border-color: white;
+	border-color: #fff;
 	margin-bottom: 5px;
 }
 .btn-primary:hover {
 	color: #27A967;
-	background-color: white;
-	border-color: white;
+	background-color: #fff;
+	border-color: #fff;
 }
 
 .call-to-action {
 	text-align: center;
+  p {
+    margin-bottom: 30px;
+  	font-family: sans-serif;
+  }
 }
-.call-to-action p {
-	margin-bottom: 30px;
-	font-family: sans-serif;
-}
+
 .glyphicon-large {
 	font-size: 90px;
 }
-
 
 .posts {
   .jumbotron {
@@ -94,14 +92,16 @@ p {
 
 .background {
   margin: 0 2% 0 2%;
-}
-
-.border {
-
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
+  .border {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+  }
 }
 
 .container-main {
   margin: 1% 10% 1% 10%;
+}
+
+.register-link a {
+  color: #3E4649;
 }
