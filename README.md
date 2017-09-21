@@ -1,24 +1,7 @@
-# README
+# Members Only - ClubHouse
+A web app created using Ruby on Rails and Bootstrap that allows users to sign up and post embarassing stories. Being signed up also allows the user to see who else has written embarassing posts. If a user is not signed up the user may read the posts but cannot see the name of the user who has written the post. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project from [The Odin Project's](https://www.theodinproject.com/home) curriculum.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## To view this project follow -
+https://members-only-clubhouse.herokuapp.com/
